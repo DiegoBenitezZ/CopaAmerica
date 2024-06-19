@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "Roboto";
+    font-weight: 100;
+    font-style: normal;
+    src: url("/fonts/Roboto-Thin.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-style: normal;
+    src: url("/fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-style: normal;
+    src: url("/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: normal;
+    src: url("/fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: normal;
+    src: url("/fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 900;
+    font-style: normal;
+    src: url("/fonts/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 100;
+    font-style: italic;
+    src: url("/fonts/Roboto-ThinItalic.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-style: italic;
+    src: url("/fonts/Roboto-LightItalic.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-style: italic;
+    src: url("/fonts/Roboto-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: italic;
+    src: url("/fonts/Roboto-MediumItalic.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: italic;
+    src: url("/fonts/Roboto-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 900;
+    font-style: italic;
+    src: url("/fonts/Roboto-BlackItalic.ttf");
+}
+
+* {
+    font-family: "Roboto";
+}
+
+.header-lg {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -3px;
+    line-height: 55px;
+}
+
+.header-md {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.text-lg {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (width < 640px) {
+    .header-lg {
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: -3px;
+        line-height: 30px;
+    }
+    
+    .header-md {
+        font-size: 16px;
+        font-weight: 800;
+    }
+    
+    .text-lg {
+        font-size: 10px;
+        font-weight: 500;
+    }
+    
+}
+
+@media (640px <= width < 768px) {
+    .header-lg {
+        font-size: 45px;
+        font-weight: 700;
+        letter-spacing: -3px;
+        line-height: 30px;
+    }
+    
+    .header-md {
+        font-size: 22px;
+        font-weight: 800;
+    }
+    
+    .text-lg {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+}

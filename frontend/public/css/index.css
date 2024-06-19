@@ -1,0 +1,25 @@
+@import url("/css/fonts.css");
+@import url("/css/font-color.css");
+@import url("/css/link.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Color Variable */
+    --white: #FAFAFA;
+    --blue: #003282;
+    --red: #FD2A2A;
+    --gray: #4D4D4D;
+}
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+section {
+    max-width: 1500px !important;
+    min-width: 400px !important;
+}

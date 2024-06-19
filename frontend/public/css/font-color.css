@@ -1,0 +1,21 @@
+.text-blue {
+    color: var(--blue);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.text-red {
+    color: var(--red);
+}
+
+.text-gray {
+    color: var(--gray);
+}
+
+.text-outline-red {
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: red;
+}

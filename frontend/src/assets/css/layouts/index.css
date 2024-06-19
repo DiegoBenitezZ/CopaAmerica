@@ -1,0 +1,36 @@
+.layout-container {
+    width: 100vw;
+    max-width: 1500px;
+    min-width: 400px;
+    height: 100vh;
+    min-height: 600px;
+    margin: auto;
+    overflow-x: hidden;
+
+    background-image: url("/img/background/primary-bg.png");
+    object-fit: cover;
+    object-position: center;
+}
+
+.layout-container .layout-content {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+@media (width < 640px) {
+    .layout-container {
+        min-height: 700px;
+    }
+}
+
+@media (640px <= width < 768px) {
+    .layout-container {
+        min-height: 750px;
+    }
+}
+
+@media (768px <= width < 1024px) {
+    .layout-container {
+        min-height: 800px;
+    }
+}

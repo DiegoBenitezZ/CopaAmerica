@@ -1,0 +1,19 @@
+.container-track-flags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 10px;
+}
+
+.container-track-flags .flag-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+@media (width < 640px) {
+    .container-track-flags {
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+}

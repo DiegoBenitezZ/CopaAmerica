@@ -1,0 +1,30 @@
+.container-logo {
+    --logo-heigth: 450px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-logo .logo-home {
+    height: var(--logo-heigth);
+    width: auto;
+}
+
+@media (width < 640px) {
+    .container-logo {
+        --logo-heigth: 70%;
+    }
+}
+
+@media (640px <= width < 768px) {
+    .container-logo {
+        --logo-heigth: 75%;
+    }
+}
+
+@media (768px <= width < 1024px) {
+    .container-logo {
+        --logo-heigth: 85%;
+    }
+}

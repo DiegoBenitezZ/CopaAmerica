@@ -1,0 +1,31 @@
+#container-home .card-container {
+    --card-padding-x: 70px;
+    --card-padding-y: 20px;
+
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    padding: var(--card-padding-y) var(--card-padding-x);
+
+    background-color: var(--white);
+}
+
+@media (width < 640px) {
+    #container-home .card-container {
+        --card-padding-x: 30px;
+        --card-padding-y: 20px;
+
+        gap: 20px;
+    }
+}
+
+@media (640px <= width < 1024px) {
+    #container-home .card-container {
+        --card-padding-x: 50px;
+        --card-padding-y: 20px;
+
+        gap: 20px;
+    }
+}
