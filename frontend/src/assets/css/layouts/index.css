@@ -19,7 +19,7 @@
 
 @media (width < 640px) {
     .layout-container {
-        min-height: 700px;
+        min-height: 650px;
     }
 }
 
