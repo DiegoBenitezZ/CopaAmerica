@@ -19,3 +19,12 @@
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: red;
 }
+
+@media (width < 640px) {
+    .text-outline-red {
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: red;
+    }
+    
+}
