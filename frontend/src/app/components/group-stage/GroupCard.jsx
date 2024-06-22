@@ -49,7 +49,7 @@ function GroupCard({group, tracker, changePositions}) {
     };
     
     return (
-        <DndContext onDragStart={handleDragStart} onDragEnd={handleDragEnd}>
+        <DndContext onDragStart={handleDragStart} onDragEnd={handleDragEnd} autoScroll={false}>
             <div className='group-card-container'>
                 <div className="group-card-header bg-blue-gradient">
                     <span className='text-white'>{group.name}</span>
