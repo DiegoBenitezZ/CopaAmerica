@@ -1,8 +1,8 @@
 import '../../../assets/css/common/button.css'
 
-function Button({id, className, children}) {
+function Button({id, className, callback, children}) {
   return (
-    <button id={id} className={`btn ${className}`}>
+    <button onClick={() => callback()} id={id} className={`btn ${className}`}>
         {children}
     </button>
   )

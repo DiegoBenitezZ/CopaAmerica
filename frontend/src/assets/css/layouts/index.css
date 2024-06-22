@@ -1,20 +1,14 @@
 .layout-container {
-    width: 100vw;
+    width: 100%;
     max-width: 1500px;
     min-width: 400px;
-    height: 100vh;
     min-height: 600px;
     margin: auto;
-    overflow-x: hidden;
-
-    background-image: url("/img/background/primary-bg.png");
-    object-fit: cover;
-    object-position: center;
 }
 
 .layout-container .layout-content {
-    height: 100%;
     overflow-x: hidden;
+    overflow-y: auto;
 }
 
 @media (width < 640px) {

@@ -1,16 +1,18 @@
 .btn {
     --btn-paddding-x: 25px;
     --btn-padding-y: 10px;
-    --btn-font-size: 18px;
+    --btn-font-size: 16px;
     
     height: fit-content;
     border: unset;
     border-radius: 5px;
     color: var(--white);
+    box-shadow: 0px 4px 10px rgb(0, 0, 0, 25%);
     font-weight: 700;
     font-size: var(--btn-font-size);
     text-decoration: none;
     padding: var(--btn-padding-y) var(--btn-paddding-x);
+    cursor: pointer;
 }
 
 .btn-group {
@@ -20,10 +22,18 @@
     height: fit-content;
 }
 
+.btn-group.align-end {
+    justify-content: end;
+}
+
 .btn.btn-primary {
     background-color: var(--blue);
 }
 
+.btn.btn-secondary {
+    background-color: var(--white);
+    color: var(--blue);
+}
 
 @media (width < 768px) {
     .btn {

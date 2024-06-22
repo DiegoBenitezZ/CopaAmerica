@@ -12,12 +12,11 @@ function BaseLayout({id, children}) {
   
   return (
     <div id={id} className="layout-container">
-        <NavTop toggleShowMenu={toggleShowMenu}/>
         <NavSide showMenu={showMenu}/>
+        <NavTop toggleShowMenu={toggleShowMenu}/>
         <div className="layout-content">
           {children}
         </div>
-        
     </div>
   )
 }

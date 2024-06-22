@@ -1,11 +1,16 @@
 import '../../../assets/css/home/card.css'
 import Button from '../common/Button'
 import TrackFlags from './TrackFlags'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 function CardHome() {
+  const navigate = useNavigate();
+  const handleRedirectBrackets = () => {
+    navigate('/group-stage');
+  }
+
   return (
-    <div className='card-container'>
+    <div className='card-container bg-white'>
         <span>
           <TrackFlags/>
           <h1 className='header-lg text-blue'>TOURNAMENT BRACKETS</h1>
@@ -21,7 +26,7 @@ function CardHome() {
           scelerisque tortor eget aliquam.
         </summary>
         <div className='btn-group'>
-          <NavLink className="btn btn-primary">Create Brackets</NavLink>
+          <Button callback={handleRedirectBrackets} className="btn-primary">Create Brackets</Button>
           <Link className="link-action external-link" to="https://copaamerica.com" target="_blank" rel="noopener noreferrer">Go to Official Page</Link>
         </div>
     </div>

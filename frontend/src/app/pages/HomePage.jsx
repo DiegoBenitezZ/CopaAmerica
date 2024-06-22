@@ -1,14 +1,14 @@
 import CardHome from "../components/home/CardHome"
 import LogoHome from "../components/home/LogoHome"
-import BaseLayout from "../layouts/BaseLayout"
+import Layout from "../layouts/Layout"
 import '../../assets/css/home/index.css'
 
 function HomePage() {
   return (
-    <BaseLayout id="container-home">
+    <Layout id="container-home">
       <CardHome/>
       <LogoHome/>
-    </BaseLayout>
+    </Layout>
   )
 }
 

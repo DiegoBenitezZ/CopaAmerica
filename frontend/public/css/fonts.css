@@ -95,7 +95,12 @@
 
 .header-md {
     font-size: 25px;
-    font-weight: 800;
+    font-weight: 700;
+}
+
+.header-sm {
+    font-size: 25px;
+    font-weight: 700;
 }
 
 .text-lg {
@@ -114,6 +119,11 @@
     .header-md {
         font-size: 16px;
         font-weight: 800;
+    }
+
+    .header-sm {
+        font-size: 22px;
+        font-weight: 700;
     }
     
     .text-lg {
@@ -134,6 +144,11 @@
     .header-md {
         font-size: 22px;
         font-weight: 800;
+    }
+
+    .header-sm {
+        font-size: 28px;
+        font-weight: 700;
     }
     
     .text-lg {

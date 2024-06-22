@@ -1,4 +1,5 @@
 import React from 'react'
+import Layout from './app/layouts/Layout';
 import RouteIndex from "./routes/Index"
 import {BrowserRouter} from "react-router-dom";
 

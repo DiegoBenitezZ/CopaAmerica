@@ -4,9 +4,6 @@
     --nav-logo-height: 50px;
     --nav-menu-width: 20px;
 
-    position: absolute;
-    top: 0;
-    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,14 +51,18 @@
     }
 }
 
-@media (640px <= width < 1024px) {
+@media (640px <= width < 768px) {
     .nav-container {
         --nav-padding-x: 40px;
         --nav-logo-height: 45px;
         --nav-menu-width: 15px;
     }  
+}
 
-    .nav-container .icon-group *{
-        color: var(--blue) !important;
-    }
+@media (768px <= width < 1024px) {
+    .nav-container {
+        --nav-padding-x: 70px;
+        --nav-logo-height: 45px;
+        --nav-menu-width: 15px;
+    }  
 }

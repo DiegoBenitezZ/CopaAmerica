@@ -6,6 +6,7 @@
     background-color: var(--blue);
     filter: drop-shadow(1px 0px 4px  black) ;
     transition: transform 600ms ease;
+    z-index: 1;
 }
 
 .container-nav-side .list-nav-side {
