@@ -28,16 +28,16 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
 
+    background-image: url("/img/background/primary-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 #root {
     min-height: 100%;
     height: 100%;
-
-    background-image: url("/img/background/primary-bg.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     overflow-y: hidden;
 }
 
