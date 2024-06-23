@@ -1,5 +1,5 @@
 #container-home {
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 #container-home #layout-content {
