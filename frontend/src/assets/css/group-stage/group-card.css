@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: var(--blue);
+    font-weight: 800;
     padding: 15px 25px;
 }
 

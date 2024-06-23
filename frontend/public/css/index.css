@@ -29,3 +29,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+hr {
+    border-width: 0px 0px 1px 0px;
+}

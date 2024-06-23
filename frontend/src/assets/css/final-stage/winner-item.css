@@ -1,0 +1,39 @@
+#winner-container {
+    position: relative;
+}
+
+#winner-cup {
+    position: absolute;
+    height: 200px;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+#winner-flag {
+    position: absolute;
+    height: 130px;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+@media (768px <= width < 1024px) {
+    
+    #winner-cup {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    #winner-flag {
+        left: unset;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

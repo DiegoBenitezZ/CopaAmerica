@@ -7,7 +7,7 @@ function TrackFlags() {
     <div className='container-track-flags'>
       {
           countries.map((country) => 
-              <img className='flag-icon' src={`/img/countries/${country.filename}`} alt="" />
+              <img key={country.id} className='flag-icon' src={`/img/countries/${country.filename}`} alt="" />
           )
       }
     </div>

@@ -1,7 +1,7 @@
 .nav-container {
-    --nav-padding-x: 70px;
-    --nav-padding-y: 20px;
-    --nav-logo-height: 50px;
+    --nav-padding-x: 60px;
+    --nav-padding-y: 15px;
+    --nav-logo-height: 45px;
     --nav-menu-width: 20px;
 
     display: flex;
@@ -20,7 +20,7 @@
 
 .nav-container .icon-group {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 .nav-container .nav-menu-icon {

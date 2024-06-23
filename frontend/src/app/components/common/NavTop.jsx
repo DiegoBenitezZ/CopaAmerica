@@ -8,8 +8,14 @@ function NavTop({toggleShowMenu}) {
     <nav className='nav-container'>
       <img className='nav-logo' src="/img/logo/logo.png" alt="Copa America"/>
       <div className='icon-group'>
-        <NavLink className="link-action" to="/">Tournament</NavLink>
-        <Link className="link-action" to="https://personal-page-iota-ten.vercel.app/" target="_blank" rel="noopener noreferrer">Contact Us</Link>
+        <NavLink className="link-action" to="/">
+          <FontAwesomeIcon icon="fa-solid fa-crown" />
+          Tournament
+        </NavLink>
+        <Link className="link-action" to="https://personal-page-iota-ten.vercel.app/" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon="fa-solid fa-address-book" />
+          Contact Us
+        </Link>
         <Link className="link-action">
           <FontAwesomeIcon icon="fa-solid fa-globe" />
           English

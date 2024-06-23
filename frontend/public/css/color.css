@@ -3,7 +3,7 @@
 }
 
 .text-white {
-    color: var(--white);
+    color: var(--white) !important;
 }
 
 .text-red {
@@ -27,6 +27,15 @@
 .bg-white {
     background-color: var(--white);
 }
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-red {
+    background-color: var(--red);
+}
+
 
 .bg-blue-gradient {
     background: #1488CC;

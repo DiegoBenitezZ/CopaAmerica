@@ -26,10 +26,12 @@
 .container-nav-side .item-nav-side {
     width: 100%;
     padding: 0px 10px;
+    
 }
 
 .container-nav-side .item-nav-side > * {
     font-size: 18px !important;
+    color: var(--white) !important;
 }
 
 @media (width < 640px) {

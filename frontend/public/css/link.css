@@ -1,14 +1,14 @@
 .link-action {
-    --link-font-size: 18px;
+    --link-font-size: 16px;
 
     display: flex;
     height: fit-content;
-    gap: 4px;
+    gap: 5px;
     align-items: center;
     color: var(--blue);
     text-decoration: none;
     font-size: var(--link-font-size);
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .link-action:hover, .link-action.active {
