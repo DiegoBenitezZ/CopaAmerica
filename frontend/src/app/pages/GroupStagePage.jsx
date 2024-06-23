@@ -1,11 +1,10 @@
 import Button from '../components/common/Button.jsx'
-import GroupCard from '../components/group-stage/GroupCard.jsx'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { groups } from '../../assets/data/groups.js' 
 import { NavLink } from 'react-router-dom'
 import '../../assets/css/group-stage/index.css'
 import Layout from '../layouts/Layout.jsx'
+import GroupList from '../components/group-stage/GroupList.jsx'
 
 function GroupStagePage() {
   const navigate = useNavigate();
@@ -41,15 +40,9 @@ function GroupStagePage() {
 
   return (
     <Layout id='group-stage-container'>
-        <h1 id="test-drag" className='text-white header-sm'>Group Stage</h1>
-        <div className='group-stage-list'>
-        {
-            groups.map((group) => 
-              <GroupCard key={group.id} changePositions={changePositions} group={group} tracker={positionsTracker[group.id]}/>
-            )
-          }
-        </div>
-        <div className="btn-group align-end">
+        <h1 className='text-white header-sm'>Group Stage</h1>
+        <GroupList tracker={positionsTracker} changePositions={changePositions}/>
+        <div className="btn-group">
           <NavLink to='/' className='btn btn-primary'>Back to Main</NavLink>
           <Button 
             callback={handleSubmit} 

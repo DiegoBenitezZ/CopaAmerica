@@ -1,4 +1,4 @@
-#group-stage-container .group-card-container {
+.group-stage-list .group-card-container {
     width: var(--group-card-width);
     height: fit-content;
     border-radius: 15px !important;
@@ -6,7 +6,7 @@
     user-select: none;
 }
 
-#group-stage-container .group-card-container .group-card-header {
+.group-stage-list .group-card-container .group-card-header {
     min-height: 55px;
     display: flex;
     align-items: center;
@@ -16,30 +16,30 @@
     padding: 15px 25px;
 }
 
-#group-stage-container .group-card-container .group-card-header .icon-tracker {
+.group-stage-list .group-card-container .group-card-header .icon-tracker {
     display:flex;
     gap: 10px;
 }
 
-#group-stage-container .group-card-container .group-card-body {
+.group-stage-list .group-card-container .group-card-body {
     background-color: var(--white);
 }
 
-#group-stage-container .group-card-body .group-card-list {
+.group-stage-list .group-card-body .group-card-list {
     list-style: none;
     color: var(--gray);
     font-size: 16px;
     font-weight: 400;
 }
 
-#group-stage-container .group-card-body .group-card-list .group-card-item {
+.group-stage-list .group-card-body .group-card-list .group-card-item {
     display: flex;
     align-items: center;
     gap: 10px;
     padding: 12px 20px;
 }
 
-#group-stage-container .group-card-item .close-btn {
+.group-stage-list .group-card-item .close-btn {
     display: none;
     color: var(--gray);
     padding: 3px 5px;
@@ -49,7 +49,7 @@
     margin-left: auto;
 }
 
-#group-stage-container .group-card-item .close-btn:hover {
+.group-stage-list .group-card-item .close-btn:hover {
     transform: scale(1.15);
     transition: transform 2ms ease;
 }

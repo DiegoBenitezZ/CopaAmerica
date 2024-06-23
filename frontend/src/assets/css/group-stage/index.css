@@ -5,7 +5,7 @@
     padding: var(--group-stage-padding-y) var(--group-stage-padding-x);
 }
 
-#group-stage-container .group-stage-list {
+.group-stage-list {
     display: flex;
     flex-wrap: wrap;
     gap: var(--group-list-gap);
