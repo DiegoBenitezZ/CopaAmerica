@@ -17,6 +17,8 @@
 html {
     scrollbar-color: var(--white) var(--blue);
     scrollbar-width: thin !important;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 body{
@@ -24,6 +26,8 @@ body{
     height: 100vh;
     background-color: var(--blue);
     overflow-x: hidden;
+    overflow-y: hidden;
+
 }
 
 #root {
@@ -34,6 +38,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow-y: hidden;
 }
 
 hr {

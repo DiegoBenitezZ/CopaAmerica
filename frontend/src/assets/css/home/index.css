@@ -1,6 +1,11 @@
+#container-home {
+    overflow-y: scroll;
+}
+
 #container-home #layout-content {
     display: flex;
     height: 100%;
+    min-height: 600px;
 }
 
 #container-home #layout-content > div {
