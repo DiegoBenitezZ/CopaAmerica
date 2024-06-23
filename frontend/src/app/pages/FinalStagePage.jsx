@@ -31,7 +31,9 @@ function FinalStagePage() {
 
 
   useEffect(() => {
-    navigate('/group-stage')
+    if(finalStage == null) {
+      navigate('/group-stage')
+    }
   }, []);
 
   const setErrorMessage = (msg) => {

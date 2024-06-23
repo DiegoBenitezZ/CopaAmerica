@@ -14,7 +14,7 @@ function ResultStagePage() {
     let finalStage = (location.state) && location.state.finalStage;
 
     const handleSubmit = () => {
-        navigate('/')
+        navigate('/group-stage')
     }
 
     useEffect(() => {

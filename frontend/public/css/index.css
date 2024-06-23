@@ -24,6 +24,8 @@ body{
     height: 100vh;
     background-color: var(--blue);
     overflow-x: hidden;
+    overflow-y: hidden;
+
 }
 
 #root {
@@ -32,6 +34,7 @@ body{
 
     background-image: url("/img/background/primary-bg.png");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
