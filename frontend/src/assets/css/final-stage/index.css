@@ -60,13 +60,6 @@
     grid-column: 3;
 }
 
-#final-stage-container .btn-group {
-    position: absolute;
-    bottom: 1%;
-    right: 3%;
-    transform: translate(-1%, -3%);
-}
-
 @media (width < 768px) {
     #final-stage-container {
         --group-stage-padding-x: 25px;

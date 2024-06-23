@@ -1,16 +1,18 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Layout from '../layouts/Layout'
 import '../../assets/css/final-stage/index.css'
 import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 import '../../assets/css/final-stage/winner-item.css'
 import Button from '../components/common/Button'
 import StageList from '../components/final-stage/StageList'
+import Message from '../components/common/Message'
 
 function FinalStagePage() {
   let navigate = useNavigate();
   let location = useLocation();
+  const [error, setError] = useState(null);
   let groupStage = location.state;  
-  let [finalStage, setFinalStage] = useState(() => {
+  let [finalStage, setFinalStage] = (groupStage !== null) ? useState(() => {
     return {
       quarters: {
         quarter1: {team1: groupStage[1][0], team2: groupStage[2][1], goTo: 'semi1', teamId: 'team1'},
@@ -25,7 +27,21 @@ function FinalStagePage() {
       final: {team1: undefined, team2:undefined, goTo: 'champion'},
       champion: undefined,
     }
-  });
+  }) : useState(null);
+
+
+  useEffect(() => {
+    navigate('/group-stage')
+  }, []);
+
+  const setErrorMessage = (msg) => {
+    setError((prevState) => msg);
+  }
+
+  const handleClickError = () => {
+    setError((prevState) => null);
+  }
+
 
   const passToSemiFinal = (countryId, teamId, goTo) => {
     setFinalStage((prevState) => {
@@ -70,20 +86,28 @@ function FinalStagePage() {
     if(filterQuarter.length === 0 && filterSemi.length === 0 && filterFinal.length === 0 && finalStage.champion !== undefined){
       navigate('/results',{state: {groupStage: groupStage, finalStage: finalStage}});
     }
+    else {
+      setErrorMessage('No empty fields allowed')
+    }
   }
 
   return (
     <Layout id='final-stage-container'>
-      <h1 className='view-title text-white header-sm'>Final Stage</h1>
-      <StageList tracker={finalStage} passToFinal={passToFinal} passToSemiFinal={passToSemiFinal} setWinner={setWinner}/>
-      <div className="btn-group align-end">
-        <NavLink to='/group-stage' className='btn btn-primary'>Back to Group State</NavLink>
-        <Button 
-          callback={handleSubmit} 
-          className='btn-secondary'
-        >FInish Bracket</Button>
-      </div>
-    
+      <Message className='message-danger' callback={handleClickError} msg={error}/>
+      {
+        (finalStage !== null) &&
+        <>
+          <h1 className='view-title text-white header-sm'>Final Stage</h1>
+          <StageList tracker={finalStage} passToFinal={passToFinal} passToSemiFinal={passToSemiFinal} setWinner={setWinner}/>
+          <div className="btn-group btn-absolute">
+            <NavLink to='/group-stage' className='btn btn-primary'>Back to Group State</NavLink>
+            <Button 
+              callback={handleSubmit} 
+              className='btn-secondary'
+            >FInish Bracket</Button>
+          </div>
+        </>
+      }
     </Layout>
   )
 }

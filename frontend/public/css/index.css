@@ -8,10 +8,15 @@
     box-sizing: border-box;
 
     /* Color Variable */
-    --white: #FAFAFA;
+    --white: #FCFCFC;
     --blue: #003282;
     --red: #FD2A2A;
     --gray: #808080;
+}
+
+html {
+    scrollbar-color: var(--white) var(--blue);
+    scrollbar-width: thin !important;
 }
 
 body{

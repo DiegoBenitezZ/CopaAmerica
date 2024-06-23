@@ -18,6 +18,12 @@
     flex: 1 1 auto;
 }
 
+#results-container .stage-team:hover {
+    transform: scale(1) !important;
+    transition: unset !important;
+}
+
+
 @media (width < 768px) {
     #results-container {
         --results-stage-padding-x: 25px;

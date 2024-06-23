@@ -1,27 +1,41 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Layout from '../layouts/Layout'
 import '../../assets/css/results-page/index.css'
-import { groups } from '../../assets/data/groups.js'
-import { useLocation } from 'react-router-dom'
-import GroupCard from '../components/group-stage/GroupCard.jsx'
-import WinnerItem from '../components/final-stage/WinnerItem.jsx'
-import StageItem from '../components/final-stage/StageItem.jsx'
+import { useLocation, useNavigate } from 'react-router-dom'
 import '../../assets/css/group-stage/group-card.css'
 import GroupList from '../components/group-stage/GroupList.jsx'
 import StageList from '../components/final-stage/StageList.jsx'
+import Button from '../components/common/Button.jsx'
 
 function ResultStagePage() {
     let location = useLocation();
-    let groupStage = location.state.groupStage;
-    let finalStage = location.state.finalStage;
+    let navigate = useNavigate();
+    let groupStage = (location.state) && location.state.groupStage;
+    let finalStage = (location.state) && location.state.finalStage;
 
-    console.log({groupStage, finalStage})
+    const handleSubmit = () => {
+        navigate('/')
+    }
+
+    useEffect(() => {
+        if(groupStage === null & finalStage === null) {
+            navigate('/group-stage');
+        }
+    });
+
     return (
         <Layout id='results-container'>
-            <h1 className='text-white header-sm'>Group Stage</h1>
-            <GroupList tracker={groupStage}/>
-            <h1 className='text-white header-sm'>Final Stage</h1>
-            <StageList tracker={finalStage}/>
+            {(finalStage != null && groupStage != null) &&
+                <>
+                    <h1 className='text-white header-sm'>Group Stage</h1>
+                    <GroupList tracker={groupStage}/>
+                    <h1 className='text-white header-sm'>Final Stage</h1>
+                    <StageList tracker={finalStage}/>
+                    <div className="btn-group btn-absolute">
+                        <Button callback={handleSubmit} className='btn-primary'>Reset Bracket</Button>
+                    </div>
+                </>
+            }
         </Layout>
     )
 }
